@@ -48,6 +48,12 @@ SOFTWARE.
 #include "jwt/error_codes.hpp"
 #include "jwt/base64.hpp"
 
+#ifdef _MSC_VER 
+//not #if defined(_WIN32) || defined(_WIN64) because we have strncasecmp in mingw
+#define strncasecmp _strnicmp
+#define strcasecmp _stricmp
+#endif
+
 namespace jwt {
 
 /// The result type of the signing function
