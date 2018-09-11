@@ -25,6 +25,7 @@ SOFTWARE.
 
 #include "jwt/detail/meta.hpp"
 #include <algorithm>
+#include <iomanip>
 
 namespace jwt {
 
