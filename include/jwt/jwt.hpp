@@ -59,7 +59,7 @@ enum class type
  * Converts a string representing a value of type
  * `enum class type` into its actual type.
  */
-inline enum type str_to_type(const jwt::string_view typ) noexcept
+inline enum type str_to_type(const jwt::string_view typ)
 {
   assert (typ.length() && "Empty type string");
 

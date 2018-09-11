@@ -23,6 +23,13 @@ SOFTWARE.
 #ifndef JWT_STRING_VIEW_HPP
 #define JWT_STRING_VIEW_HPP
 
+#ifdef WIN32
+// warning C4003: not enough actual parameters for macro 'max'
+#undef max
+// warning C4003: not enough actual parameters for macro 'min'
+#undef min
+#endif
+
 #include <limits>
 #include <string>
 #include <cassert>
